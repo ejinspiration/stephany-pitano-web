@@ -57,6 +57,18 @@ html{scroll-behavior:smooth;scroll-padding-top:85px}*,*::before,*::after{box-siz
 .ej-hero .ej-tagline,.ej-hero .ej-intro{text-align:left;letter-spacing:normal;word-spacing:normal;max-width:540px}
 @media(max-width:800px){.ej-hero{min-height:660px}.ej-hero::before{background-size:auto 100%;background-position:65% center}.ej-hero::after{background:linear-gradient(90deg,rgba(20,35,55,.95),rgba(20,35,55,.62) 58%,rgba(20,35,55,.2))}.ej-corner-logo{width:108px;height:108px}}
 @media(max-width:540px){.ej-hero{min-height:700px}.ej-hero::before{background-size:auto 100%;background-position:60% center}.ej-hero::after{background:linear-gradient(90deg,rgba(20,35,55,.9),rgba(20,35,55,.64))}.ej-corner-logo{width:96px;height:96px}}
+
+/* Portada EJ: fotografía ambiental tenue y fotografía completa en tarjeta derecha */
+.ej-hero{min-height:650px;padding:55px 0 75px;background:#172538}
+.ej-hero::before{background:url('portada-ej-inspiration.png') center center/cover no-repeat;opacity:.20}
+.ej-hero::after{background:linear-gradient(90deg,rgba(18,33,52,.96),rgba(18,33,52,.76))}
+.ej-hero-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.85fr);gap:44px;align-items:center;margin-top:28px}
+.ej-hero-layout>div:first-child{max-width:none}
+.ej-hero-layout::after{content:"";display:block;grid-column:2;grid-row:1;width:100%;height:430px;background:#f8f5ef url('portada-ej-inspiration.png') center center/contain no-repeat;border:9px solid #f8f5ef;border-radius:13px;box-shadow:0 24px 55px rgba(0,0,0,.28)}
+.ej-hero .ej-tagline,.ej-hero .ej-intro{max-width:580px;text-align:left;letter-spacing:normal;word-spacing:normal}
+.ej-corner-logo{width:118px;height:118px}
+@media(max-width:900px){.ej-hero-layout{grid-template-columns:minmax(0,1fr) minmax(240px,.8fr);gap:22px}.ej-hero-layout::after{height:350px}}
+@media(max-width:700px){.ej-hero{padding:30px 0 55px}.ej-hero-layout{display:flex;flex-direction:column;align-items:stretch;gap:28px}.ej-hero-layout::after{width:100%;height:380px;flex-shrink:0;background-size:contain}.ej-hero::after{background:rgba(18,33,52,.82)}.ej-corner-logo{width:100px;height:100px}}
 </style><style>.brand{width:142px;height:74px;object-fit:contain;object-position:left center;mix-blend-mode:normal}.hero h1{margin-top:4px}@media(max-width:700px){.brand{width:112px;height:60px}}</style><style>
 /* V6 refinements: original hero photography retained */
 .brand{width:180px;height:106px;object-fit:contain;object-position:left center;mix-blend-mode:screen}

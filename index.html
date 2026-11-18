@@ -211,6 +211,13 @@ html body .legal-lux .legal-lux-item p,html body .realizate-lux .realizate-lux-i
   height: calc(100% - 112px);
   object-position: right bottom;
 }
+@media (min-width: 768px) {
+  .hero-photo {
+    mask-image: linear-gradient(to right, transparent 17%, #000 48%),
+      linear-gradient(to bottom, transparent, #000 15%);
+    mask-composite: intersect;
+  }
+}
 .v28-float-contact { bottom: 28px; }
 #backToTop { bottom: 86px; }
 @media (max-width: 900px) {
